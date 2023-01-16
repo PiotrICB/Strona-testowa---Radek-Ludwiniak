@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>Strona testowa - Radek Ludwiniak</title>
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<nav>
+			<div class="container">
+				<div class="nav-list">
+					<a href="index.html" class="nav-logo">Firma Kalkulator</a>
+
+					<div class="nav-items">
+						<a href="#powierzchnie" class="nav-item">powierzchnie</a>
+						<a href="#objętość" class="nav-item">Objętości</a>
+
+						<a href="#kontakt" class="nav-item">kontakt</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section>
+			<header class="calculation-back section-heading">
+				<div class="container">
+					<div class="header-text">
+						<img
+							src="./galery/robocik.jpg"
+							alt="Zdjęcie osoby - Radek Ludwiniak"
+						/>
+					</div>
+
+					<div class="header-text">
+						<p>Radek Ludwiniak</p>
+						<p>Prezetacja: strona front-end</p>
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section  id="powierzchnie" class="section-heading calculation-back section-one">
+					<div class="container">
+						<h1>Pole Powierzchni</h1>
+						<div class="surface-item">
+							<h4>pole powierzchni prostokąta</h4>
+							<p>Dane: blok1, blok,2 powierzchnia:S = bok1 * bok2</p>
+						</div>
+						<div class="surface-item">
+							<h4>pole powierzchni trójkąta</h4>
+							<p>podstawa p, wysokość b, powierzchnia: S = 1/2 a*h</p>
+						</div>
+					</div>
+				</section>
+				<section  id="objętość" class="section-heading calculation-back section-one">
+					<div class="container">
+						<h1>Liczba objętości</h1>
+						<div class="volume-item">
+							<h4>Objętość kuli</h4>
+							<p>Kula promień r.objętość: V = 4/3 Pi*r^3</p>
+						</div>
+						<div class="volume-item">
+							<h4>Objętość sześcianu</h4>
+							<p>Bok sześcianu:a, objętość: V =a^3</p>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<section id="kontakt" class="section-heading calculation-back">
+				<h2 class="section-heading container contact-heading">Kontakt</h2>
+
+				<div class="container">
+					<form class="contact-form">
+						<div class="contact-form-top">
+							<label for="name" class="contact-form-label"
+								>Imię i nazwisko:</label
+							>
+							<input type="text" class="contact-form-input" id="name" />
+
+							<label for="year" class="contact-form-label"
+								>rok i semestr studiów:</label
+							>
+							<input type="text" id="year" class="contact-form-input" />
+
+							<label class="contact-form-label"
+								>ulubiony Język programowania:</label
+							>
+
+							<select class="form-select" aria-label="Default select example">
+								<option selected>- wybierz -</option>
+								<option value="1">JavaScript</option>
+								<option value="2">Python</option>
+								<option value="3">C++</option>
+							</select>
+							<label class="contact-form-label"
+								>ulubiony system operacyjny:</label
+							>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>- wybierz -</option>
+								<option value="1">MS Windows</option>
+								<option value="2">Mac OS</option>
+								<option value="3">Linux</option>
+							</select>
+							<label  class="contact-form-label"
+								>ulubiona przeglądarka internetowa</label
+							>
+							<select class="form-select" aria-label="Default select example">
+								<option selected>- wybierz -</option>
+								<option value="1">Chrome</option>
+								<option value="2">Safari</option>
+								<option value="3">Firefox</option>
+							</select>
+
+							<label for="email" class="contact-form-label"
+								>Adres e-mail:</label
+							>
+							<input type="text" id="email" class="contact-form-input" />
+						</div>
+
+						<label for="msg" class="contact-form-label">Wiadomość:</label>
+						<textarea id="msg" class="contact-form-textarea"></textarea>
+
+						<button
+							type="submit"
+							class="contact-form-btn"
+						>
+							Wyślij
+						</button>
+					</form>
+				</div>
+			</section>
+
+			<footer class="calculation-back">
+				<p>Udzielam zgody na przetwarzanie danych osobowych</p>
+			</footer>
+		</section>
+	</body>
+</html>
